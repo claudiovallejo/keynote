@@ -14,7 +14,7 @@ page "/slide.html", layout: :main
 
 # Slide Proxies
 data.slides.each do |id, slide|
-  proxy "/#{slide.title.parameterize}/index.html", "/slide.html", :locals => { :slide => slide }, :ignore => true
+  proxy "/slide-#{slide.order}/index.html", "/slide.html", :locals => { :slide => slide }, :ignore => true
 end
 
 # General configuration
