@@ -1,0 +1,59 @@
+//  Cache slide content
+const $content = document.getElementsByClassName('js-content');
+const $container = document.getElementsByClassName('js-container')[0];
+//  On window.load, fade-in content
+$content && window.addEventListener('load', function(){
+  for (var c = 0; c < $content.length; c++) {
+    toggle($content[c], "o0", "o1");
+    toggle($content[c], 'transform-tY0', 'transform-tYm4');
+    $content[c].setAttribute('style', 'transition-delay: ' + ((c+1)*0.15) + 's;');
+  }
+});
+<%# Config %>
+<% slides = [] %>
+<% data.slides.each do |id, slide| %>
+  <% slides.push("slide-#{slide.order}") %>
+<% end %>
+<%# End %>
+//  Array of presentation slides
+const slides = <%= slides %>;
+const href = window.location.href;
+const path = href.substring(href.lastIndexOf("/")+1);
+//
+window.addEventListener('keydown', slideControl);
+//  Slide indices
+const cur = slides.indexOf(path);
+var prv = "";
+var nxt = "";
+//
+function slideControl(key) {
+  //
+  if (cur == 0) {
+    prv = slides[slides.length - 1];
+    nxt = slides[1];
+  }
+  else if (cur == slides.length - 1) {
+    prv = slides[slides.length - 2];
+    nxt = slides[0];
+  }
+  else {
+    prv = slides[cur - 1];
+    nxt = slides[cur + 1];
+  }
+  //  Right Arrow
+  if (key.keyCode === 39) changeSlide(nxt);
+  //  Left Arrow
+  if (key.keyCode === 37) changeSlide(prv);
+}
+//
+function changeSlide(path) {
+  toggle($container, 'o1', 'o0');
+  $container.addEventListener('transitionend', function(){
+    window.location.href = path;
+  });
+}
+//  Toggle class function
+function toggle($element, classA, classB) {
+  $element.classList.toggle(classA);
+  $element.classList.toggle(classB);
+}
