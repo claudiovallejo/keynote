@@ -1,0 +1,47 @@
+<%# Config %>
+<% slide = locals[:slide] %>
+<%# End %>
+<main class="w65 center">
+  <div class="flex items-center">
+    <%# First Column %>
+    <% if slide.content.first_column %>
+      <%# Config %>
+      <% column = slide.content.first_column %>
+      <% cl = column.length - 1 %>
+      <%# End %>
+      <div class="w-50 pr1">
+        <% column.each_with_index do |content, c| %>
+          <%# Config %>
+          <% type = content.type %>
+          <% if c != cl %>
+            <% next_type = column[c + 1].type %>
+          <% else %>
+            <% next_type = nil %>
+          <% end %>
+          <%# End %>
+          <%= partial("partials/content/#{type}", :locals => { :content => content, :next_type => next_type }) %>
+        <% end %>
+      </div>
+    <% end %>
+    <%# Second Column %>
+    <% if slide.content.second_column %>
+      <%# Config %>
+      <% column = slide.content.second_column %>
+      <% cl = column.length - 1 %>
+      <%# End %>
+      <div class="w-50 pl1">
+        <% column.each_with_index do |content, c| %>
+          <%# Config %>
+          <% type = content.type %>
+          <% if c != cl %>
+            <% next_type = column[c + 1].type %>
+          <% else %>
+            <% next_type = nil %>
+          <% end %>
+          <%# End %>
+          <%= partial("partials/content/#{type}", :locals => { :content => content, :next_type => next_type }) %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</main>
