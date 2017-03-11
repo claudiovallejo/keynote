@@ -9,6 +9,7 @@ html { -webkit-font-smoothing: antialiased; }
 .fw7 { font-weight: 700; }
 /* Font Sizes */
 .f1_125 { font-size: 1.125rem; }
+.f2 { font-size: 2rem; }
 .f3 { font-size: 3rem; }
 .f4 { font-size: 4rem; }
 /* Line Height */
@@ -162,6 +163,7 @@ html { -webkit-font-smoothing: antialiased; }
 .function-cb { -webkit-transition-timing-function: cubic-bezier(.25,.8,.25,1); transition-timing-function: cubic-bezier(.25,.8,.25,1); }
 .function-eio { -webkit-transition-timing-function: ease-in-out; transition-timing-function: ease-in-out; }
 /* Transition Durations */
+.duration0_25 { -webkit-transition-duration: 0.25s; transition-duration: 0.25s; }
 .duration1 { -webkit-transition-duration: 1s; transition-duration: 1s; }
 /* Transition Properties */
 .property-transform { -webkit-transition-property: transform; transition-property: transform; }
