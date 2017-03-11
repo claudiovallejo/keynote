@@ -1,0 +1,16 @@
+{
+  "title": "Sample Slide",
+  "order": 0,
+  "content": {
+    "first_column": [
+      {
+        "type": "title",
+        "title": "Portfolio Review"
+      },
+      {
+        "type": "subtitle",
+        "subtitle": "Managed by Q"
+      }
+    ]
+  }
+}
