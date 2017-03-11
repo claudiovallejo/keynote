@@ -1,0 +1,12 @@
+{
+  "title": "Continuation",
+  "type": "full",
+  "order": 3,
+  "content": [
+    {
+      "type": "image",
+      "src": "images/sample-b.png",
+      "alt": "Sample image alternative text"
+    }
+  ]
+}

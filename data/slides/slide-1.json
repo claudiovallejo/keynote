@@ -1,15 +1,12 @@
 {
-  "title": "Sample Slide",
-  "order": 0,
+  "title": "Cover",
+  "type": "half",
+  "order": 1,
   "content": {
     "first_column": [
       {
         "type": "title",
         "title": "Portfolio Review"
-      },
-      {
-        "type": "subtitle",
-        "subtitle": "Managed by Q"
       }
     ]
   }

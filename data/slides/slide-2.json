@@ -1,0 +1,20 @@
+{
+  "title": "Sample Image",
+  "type": "half",
+  "order": 2,
+  "content": {
+    "first_column": [
+      {
+        "type": "paragraph",
+        "paragraph": "Lorem ipsum dolor sit amet consectetur adipiscing seit. In questa parole maecenas rex."
+      }
+    ],
+    "second_column": [
+      {
+        "type": "image",
+        "src": "images/sample-a.png",
+        "alt": "Alternative text"
+      }
+    ]
+  }
+}
