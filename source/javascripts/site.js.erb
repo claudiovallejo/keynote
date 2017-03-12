@@ -10,9 +10,10 @@ $content && window.addEventListener('load', function(){
   }
 });
 <%# Config %>
+<% total = data.slides.length %>
 <% slides = [] %>
-<% data.slides.each do |id, slide| %>
-  <% slides.push("slide-#{slide.order}") %>
+<% (1..total).each do |s| %>
+  <% slides.push("slide-#{s}") %>
 <% end %>
 <%# End %>
 //  Array of presentation slides
