@@ -1,8 +1,17 @@
 //  Cache slide content
+const $title = document.querySelector(`[data-header="title"]`);
+const $button = document.querySelector(`[data-header="button"]`);
+const $menu = document.querySelector(`[data-header="menu"]`);
+const $links = document.querySelectorAll(`[data-header="link"]`);
 const $content = document.getElementsByClassName('js-content');
+const cl = $content.length;
 const $container = document.getElementsByClassName('js-container')[0];
 //  On window.load, fade-in content
 $content && window.addEventListener('load', function(){
+  //  Load $title
+  toggle($title, "o0", "o1");
+  $title.setAttribute('style', 'transition-delay: ' + (cl+1)*0.15 + 's;');
+  //  Load $content
   for (var c = 0; c < $content.length; c++) {
     toggle($content[c], "o0", "o1");
     toggle($content[c], 'transform-tY0', 'transform-tYm4');
@@ -20,23 +29,25 @@ $content && window.addEventListener('load', function(){
 const slides = <%= slides %>;
 const href = window.location.href;
 const path = href.substring(href.lastIndexOf("/")+1);
-//
+//  Keydown event listener
 window.addEventListener('keydown', slideControl);
 //  Slide indices
 const cur = slides.indexOf(path);
 var prv = "";
 var nxt = "";
-//
+//  Slide controller determines previous and next slides based on current slide
 function slideControl(key) {
-  //
+  //  If current slide is first slide
   if (cur == 0) {
     prv = slides[slides.length - 1];
     nxt = slides[1];
   }
+  //  If current slide is last slide
   else if (cur == slides.length - 1) {
     prv = slides[slides.length - 2];
     nxt = slides[0];
   }
+  //  If current slide is not first or last slide
   else {
     prv = slides[cur - 1];
     nxt = slides[cur + 1];
@@ -48,14 +59,57 @@ function slideControl(key) {
 }
 //
 function changeSlide(path) {
+  //  Content container
   toggle($container, 'o1', 'o0');
   $container.addEventListener('transitionend', function(){
     // window.location.href = "https://keynote.netlify.com/" + path + "/index.html";
     window.location.href = path;
   });
+  //  If Menu Links are visible
+  if (menuSwitch) {
+    toggle($button, 'bg-black', 'bg-white');
+    toggle($menu, 'o0', 'o1');
+  }
 }
 //  Toggle class function
 function toggle($element, classA, classB) {
   $element.classList.toggle(classA);
   $element.classList.toggle(classB);
+}
+var menuSwitch = false;
+//  Menu Button event listener
+$button.addEventListener('click', menuSwitcher);
+window.addEventListener('keydown', function(key) {
+  if (key.keyCode === 77 || key.keyCode === 13) menuSwitcher();
+});
+//  Menu switcher
+function menuSwitcher() {
+  //  If menu is hidden
+  if (menuSwitch) {
+    menuSwitch = false;
+  }
+  //  If menu is visisble
+  else {
+    menuSwitch = true;
+  }
+  //  Toggle Button
+  toggle($button, 'bg-white', 'bg-black');
+  //  Toggle Navigation Menu
+  toggle($menu, 'o0', 'o1');
+  toggle($menu, 'transform-tX4', 'transform-tX0');
+}
+//  Menu Link Hover transition
+for (var l = 0; l < $links.length; l++) {
+  //  Mouse Over
+  $links[l].addEventListener('mouseover', function() {
+    toggle(this, 'black', 'dark-gray');
+  });
+  //  Mouse Out
+  $links[l].addEventListener('mouseout', function() {
+    toggle(this, 'black', 'dark-gray');
+  });
+  //  Click
+  $links[l].addEventListener('click', function() {
+    changeSlide(this.getAttribute(href));
+  });
 }
