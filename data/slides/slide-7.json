@@ -1,18 +1,18 @@
 {
-  "title": "Tym Forest: Informative Website",
-  "order": 4,
+  "title": "Tym Forest: Manageable Website",
+  "order": 7,
   "type": "half",
   "link": true,
   "content": {
     "first_column": [
       {
         "type": "paragraph",
-        "paragraph": "Goal 1",
+        "paragraph": "Goal 2",
         "config": { "color": "dark-gray" }
       },
       {
         "type": "subtitle",
-        "subtitle": "Informative Website",
+        "subtitle": "Manageable Website",
         "config": { "color": "black" }
       }
     ],

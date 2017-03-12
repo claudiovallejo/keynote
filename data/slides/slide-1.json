@@ -6,13 +6,15 @@
     "first_column": [
       {
         "type": "subtitle",
-        "subtitle": "Portfolio Presentation"
+        "subtitle": "Portfolio Presentation",
+        "config": { "color": "black" }
       }
     ],
     "second_column": [
       {
         "type": "paragraph",
-        "paragraph": "by Claudio Vallejo"
+        "paragraph": "by Claudio Vallejo",
+        "config": { "color": "dark-gray" }
       }
     ]
   }

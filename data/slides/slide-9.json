@@ -1,20 +1,20 @@
 {
-  "title": "Tym Forest: Website Demos",
-  "order": 6,
+  "title": "Tym Forest: Learnings",
+  "order": 9,
   "type": "half",
   "link": true,
   "content": {
     "first_column": [
       {
         "type": "subtitle",
-        "subtitle": "Website Demos",
+        "subtitle": "Learnings",
         "config": { "color": "black" }
       }
     ],
     "second_column": [
       {
         "type": "list",
-        "list": ["Product Detail", "Store Detail"],
+        "list": ["Focus on the Problem", "Value of System Design", "Budget for Errors"],
         "config": { "color": "dark-gray" }
       }
     ]

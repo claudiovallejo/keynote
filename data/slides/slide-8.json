@@ -1,20 +1,20 @@
 {
-  "title": "Tym Forest: Website Demos",
-  "order": 6,
+  "title": "Tym Forest: Challenges",
+  "order": 8,
   "type": "half",
   "link": true,
   "content": {
     "first_column": [
       {
         "type": "subtitle",
-        "subtitle": "Website Demos",
+        "subtitle": "Challenges",
         "config": { "color": "black" }
       }
     ],
     "second_column": [
       {
         "type": "list",
-        "list": ["Product Detail", "Store Detail"],
+        "list": ["Clear Expectations", "Defined Process", "Integration Bugs"],
         "config": { "color": "dark-gray" }
       }
     ]

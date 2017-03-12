@@ -1,18 +1,25 @@
 {
-  "title": "Tym Forest",
+  "title": "Tym Forest: Project Goals",
   "order": 3,
   "type": "half",
   "content": {
     "first_column": [
       {
         "type": "subtitle",
-        "subtitle": "Tym Forest"
+        "subtitle": "Tym Forest Website",
+        "config": { "color": "black" }
+      },
+      {
+        "type": "paragraph",
+        "paragraph": "Main Project Goals",
+        "config": { "color": "dark-gray" }
       }
     ],
     "second_column": [
       {
-        "type": "paragraph",
-        "paragraph": "Mexican Lumber Store chain offering a wide variety of fine woods and wood services."
+        "type": "list",
+        "list": ["1 — Informative", "2 — Manageable"],
+        "config": { "color": "dark-gray" }
       }
     ]
   }

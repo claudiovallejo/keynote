@@ -1,18 +1,20 @@
 {
-  "title": "Overview",
+  "title": "Presentation Overview",
   "order": 2,
   "type": "half",
   "content": {
     "first_column": [
       {
         "type": "subtitle",
-        "subtitle": "Overview"
+        "subtitle": "Overview",
+        "config": { "color": "black" }
       }
     ],
     "second_column": [
       {
         "type": "list",
-        "list": ["1 — Tym Forest", "2 — Gas Application"]
+        "list": ["1 — Tym Forest Website", "2 — Fuel Price App Exercise", "3 — Q&A"],
+        "config": { "color": "dark-gray" }
       }
     ]
   }

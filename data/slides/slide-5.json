@@ -1,5 +1,5 @@
 {
-  "title": "Informative",
+  "title": "Tym Forest: Site Structure",
   "order": 5,
   "type": "half",
   "link": true,
@@ -7,13 +7,25 @@
     "first_column": [
       {
         "type": "subtitle",
-        "subtitle": "Informative"
+        "subtitle": "Site Structure",
+        "config": { "color": "black" }
+      },
+      {
+        "type": "paragraph",
+        "paragraph": "4 main sections +</br>2 dynamic sections",
+        "config": { "color": "dark-gray" }
       }
     ],
     "second_column": [
       {
-        "type": "paragraph",
-        "paragraph": "Up-to-date business snapshot of available products, sales, store details, and business news"
+        "type": "list",
+        "list": ["1 — Home", "2 — Products", "3 — Services", "4 — Stores"],
+        "config": { "color": "dark-gray" }
+      },
+      {
+        "type": "list",
+        "list": ["A — Products on Sale", "B — Careers"],
+        "config": { "color": "dark-gray" }
       }
     ]
   }
