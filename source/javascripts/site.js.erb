@@ -50,7 +50,7 @@ function slideControl(key) {
 function changeSlide(path) {
   toggle($container, 'o1', 'o0');
   $container.addEventListener('transitionend', function(){
-    window.location.href = path;
+    window.location.href = path + "/index.html";
   });
 }
 //  Toggle class function
