@@ -1,15 +1,19 @@
 {
-  "title": "Project Introduction",
+  "title": "Tym Forest",
   "order": 3,
-  "type": "full",
-  "content": [
-    {
-      "type": "list",
-      "list": [
-        "Informative",
-        "Manageable",
-        "Clean aesthetic"
-      ]
-    }
-  ]
+  "type": "half",
+  "content": {
+    "first_column": [
+      {
+        "type": "subtitle",
+        "subtitle": "Tym Forest"
+      }
+    ],
+    "second_column": [
+      {
+        "type": "paragraph",
+        "paragraph": "Mexican Lumber Store chain offering a wide variety of fine woods and wood services."
+      }
+    ]
+  }
 }

@@ -1,0 +1,20 @@
+{
+  "title": "Informative",
+  "order": 5,
+  "type": "half",
+  "link": true,
+  "content": {
+    "first_column": [
+      {
+        "type": "subtitle",
+        "subtitle": "Informative"
+      }
+    ],
+    "second_column": [
+      {
+        "type": "paragraph",
+        "paragraph": "Up-to-date business snapshot of available products, sales, store details, and business news"
+      }
+    ]
+  }
+}

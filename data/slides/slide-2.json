@@ -1,19 +1,18 @@
 {
-  "title": "Tym Forest",
-  "type": "half",
+  "title": "Overview",
   "order": 2,
+  "type": "half",
   "content": {
     "first_column": [
       {
-        "type": "paragraph",
-        "paragraph": "Tym Forest is a Mexican Lumber Store chain offering a wide variety of fine woods and wood services."
+        "type": "subtitle",
+        "subtitle": "Overview"
       }
     ],
     "second_column": [
       {
-        "type": "image",
-        "src": "/images/forest-worker.png",
-        "alt": "Tym Forest worker operating wood cutting machine"
+        "type": "list",
+        "list": ["1 — Tym Forest", "2 — Gas Application"]
       }
     ]
   }

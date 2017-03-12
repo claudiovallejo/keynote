@@ -1,0 +1,20 @@
+{
+  "title": "Site Structure",
+  "order": 6,
+  "type": "half",
+  "link": true,
+  "content": {
+    "first_column": [
+      {
+        "type": "list",
+        "list": ["1 — Index", "2 — Products", "3 — Applications", "4 — Sales", "5 — Services"]
+      }
+    ],
+    "second_column": [
+      {
+        "type": "list",
+        "list": ["6 — Stores", "7 — About", "8 — Careers", "9 — Policy"]
+      }
+    ]
+  }
+}

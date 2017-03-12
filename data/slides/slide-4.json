@@ -1,0 +1,19 @@
+{
+  "title": "Project Introduction",
+  "order": 4,
+  "type": "half",
+  "content": {
+    "first_column": [
+      {
+        "type": "subtitle",
+        "subtitle": "Website Goals"
+      }
+    ],
+    "second_column":[
+      {
+        "type": "list",
+        "list": ["1 — Informative", "2 — Manageable", "3 — Clean"]
+      }
+    ]
+  }
+}
