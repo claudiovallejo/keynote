@@ -1,4 +1,9 @@
 <%# Config %>
-
+<% if next_type === "subtitle" %>
+  <% margin_bottom = "mb1" %>
+<% else %>
+  <% margin_bottom = "" %>
+<% end %>
+<% color = content.config.color %>
 <%# End %>
-<p class="js-content function-cb duration1 property-all o0 transform-tYm4 ma0 roboto f2 fw4 lh1_5 dark-gray"><%= content.paragraph %></p>
+<p class="js-content function-cb duration1 property-all o0 transform-tYm4 ma0 <%= margin_bottom %> roboto f2 fw4 lh1_5 <%= color %>"><%= content.paragraph %></p>

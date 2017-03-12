@@ -1,15 +1,16 @@
 <%# Config %>
 <% il = content.list.length - 1 %>
+<% color = content.config.color %>
 <%# End %>
 <ul class="ma0 pa0 list">
   <% content.list.each do |item, i| %>
     <%# Config %>
     <% if i != il %>
-      <% margin_bottom = "mb1" %>
+      <% margin_bottom = "mb2" %>
     <% else %>
       <% margin_bottom = "" %>
     <% end %>
     <%# End %>
-    <li class="js-content function-cb duration1 property-all o0 transform-tYm4 ma0 <%= margin_bottom %> roboto f2 fw4 dark-gray"><%= item %></li>
+    <li class="js-content function-cb duration1 property-all o0 transform-tYm4 ma0 <%= margin_bottom %> roboto f2 fw4 <%= color %>"><%= item %></li>
   <% end %>
 </ul>
