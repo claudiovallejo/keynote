@@ -8,10 +8,14 @@
     <% page = slide.content  %>
     <% cl = page.length - 1 %>
     <%# End %>
-    <% page.each do |content, c| %>
+    <% page.each_with_index do |content, c| %>
       <%# Config %>
       <% type = content.type %>
-      <% next_type = nil %>
+      <% if c != cl %>
+        <% next_type = page[c+1].type %>
+      <% else %>
+        <% next_type = nil %>
+      <% end %>
       <%# End %>
       <%= partial("partials/content/#{type}", :locals => { :content => content, :next_type => next_type }) %>
     <% end %>
