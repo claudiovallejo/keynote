@@ -1,8 +1,8 @@
 <%# Config %>
-<% if next_type === "paragraph" %>
+<% if next_type === "paragraph" || next_type === "list" %>
   <% margin_bottom = "mb1" %>
 <% else %>
   <% margin_bottom = "" %>
 <% end %>
 <%# End %>
-<h2 class="js-content function-cb duration1 property-all o0 transform-tYm4 ma0 <%= margin_bottom %> roboto f3 fw4 dark-gray"><%= content.subtitle %></h2>
+<h2 class="js-content function-cb duration1 property-all o0 transform-tYm4 ma0 <%= margin_bottom %> roboto f3 fw4 black"><%= content.subtitle %></h2>

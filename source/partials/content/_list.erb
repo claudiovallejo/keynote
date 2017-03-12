@@ -5,11 +5,11 @@
   <% content.list.each do |item, i| %>
     <%# Config %>
     <% if i != il %>
-      <% margin_bottom = "mb2" %>
+      <% margin_bottom = "mb1" %>
     <% else %>
       <% margin_bottom = "" %>
     <% end %>
     <%# End %>
-    <li class="js-content function-cb duration1 property-all o0 transform-tYm4 lst-circle ma0 <%= margin_bottom %> roboto f2 fw4 black"><%= item %></li>
+    <li class="js-content function-cb duration1 property-all o0 transform-tYm4 ma0 <%= margin_bottom %> roboto f2 fw4 dark-gray"><%= item %></li>
   <% end %>
 </ul>
