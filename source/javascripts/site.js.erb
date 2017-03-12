@@ -50,7 +50,8 @@ function slideControl(key) {
 function changeSlide(path) {
   toggle($container, 'o1', 'o0');
   $container.addEventListener('transitionend', function(){
-    window.location.href = "https://keynote.netlify.com/" + path + "/index.html";
+    // window.location.href = "https://keynote.netlify.com/" + path + "/index.html";
+    window.location.href = path;
   });
 }
 //  Toggle class function
