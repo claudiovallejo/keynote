@@ -1,19 +1,19 @@
 {
-  "title": "Sample Image",
+  "title": "Tym Forest",
   "type": "half",
   "order": 2,
   "content": {
     "first_column": [
       {
         "type": "paragraph",
-        "paragraph": "Lorem ipsum dolor sit amet consectetur adipiscing seit. In questa parole maecenas rex."
+        "paragraph": "Tym Forest is a Mexican Lumber Store chain offering a wide variety of fine woods and wood services."
       }
     ],
     "second_column": [
       {
         "type": "image",
-        "src": "images/sample-a.png",
-        "alt": "Alternative text"
+        "src": "/images/forest-worker.png",
+        "alt": "Tym Forest worker operating wood cutting machine"
       }
     ]
   }

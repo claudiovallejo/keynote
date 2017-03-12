@@ -1,12 +1,15 @@
 {
-  "title": "Continuation",
-  "type": "full",
+  "title": "Project Introduction",
   "order": 3,
+  "type": "full",
   "content": [
     {
-      "type": "image",
-      "src": "images/sample-b.png",
-      "alt": "Sample image alternative text"
+      "type": "list",
+      "list": [
+        "Informative",
+        "Manageable",
+        "Clean aesthetic"
+      ]
     }
   ]
 }

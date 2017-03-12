@@ -1,13 +1,15 @@
 {
-  "title": "Cover",
-  "type": "half",
+  "title": "Introduction",
+  "type": "full",
   "order": 1,
-  "content": {
-    "first_column": [
-      {
-        "type": "title",
-        "title": "Portfolio Review"
-      }
-    ]
-  }
+  "content": [
+    {
+      "type": "title",
+      "title": "Portfolio Review"
+    },
+    {
+      "type": "subtitle",
+      "subtitle": "by Claudio Vallejo"
+    }
+  ]
 }
