@@ -1,7 +1,9 @@
 <%# Config %>
 <% slide = locals[:slide] %>
 <%# End %>
-<main class="w65 center">
+<%# Navigation %>
+<%= partial("partials/navigation/header", :locals => { :order => slide.order, :title => slide.title }) %>
+<main class="js-container function-eio duration0_25 property-opacity o1 w65 center">
   <%# Full Page Slide %>
   <% if slide.type === "full" %>
     <%# Config %>
