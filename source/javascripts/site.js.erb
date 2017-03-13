@@ -62,8 +62,8 @@ function changeSlide(path) {
   //  Content container
   toggle($container, 'o1', 'o0');
   $container.addEventListener('transitionend', function(){
-    // window.location.href = "https://keynote.netlify.com/" + path + "/index.html";
-    window.location.href = path;
+    window.location.href = "https://keynote.netlify.com/" + path + "/index.html";
+    // window.location.href = path;
   });
   //  If Menu Links are visible
   if (menuSwitch) {
@@ -93,7 +93,8 @@ function menuSwitcher() {
     menuSwitch = true;
   }
   //  Toggle Button
-  toggle($button, 'bg-white', 'bg-black');
+  toggle($button, 'bg-white', 'bg-blue');
+  toggle($button, 'b--black', 'b--blue')
   //  Toggle Navigation Menu
   toggle($menu, 'o0', 'o1');
   toggle($menu, 'transform-tX4', 'transform-tX0');
@@ -102,11 +103,11 @@ function menuSwitcher() {
 for (var l = 0; l < $links.length; l++) {
   //  Mouse Over
   $links[l].addEventListener('mouseover', function() {
-    toggle(this, 'black', 'dark-gray');
+    toggle(this, 'blue', 'dark-gray');
   });
   //  Mouse Out
   $links[l].addEventListener('mouseout', function() {
-    toggle(this, 'black', 'dark-gray');
+    toggle(this, 'blue', 'dark-gray');
   });
   //  Click
   $links[l].addEventListener('click', function() {
