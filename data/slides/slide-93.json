@@ -1,0 +1,22 @@
+{
+  "title": "Fuel Price App: Exercise Demo",
+  "order": 12,
+  "type": "half",
+  "link": true,
+  "content": {
+    "first_column": [
+      {
+        "type": "subtitle",
+        "subtitle": "Exercise Demos",
+        "config": { "color": "black" }
+      }
+    ],
+    "second_column": [
+      {
+        "type": "list",
+        "list": ["<span class=\"dark-gray\">1 —</span> Process", "<span class=\"dark-gray\">2 —</span> Case Study"],
+        "config": { "color": "black" }
+      }
+    ]
+  }
+}

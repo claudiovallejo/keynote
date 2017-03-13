@@ -1,0 +1,22 @@
+{
+  "title": "Fuel Price App: Goal",
+  "order": 11,
+  "type": "half",
+  "link": true,
+  "content": {
+    "first_column": [
+      {
+        "type": "subtitle",
+        "subtitle": "Exercise Goal",
+        "config": { "color": "black" }
+      }
+    ],
+    "second_column": [
+      {
+        "type": "paragraph",
+        "paragraph": "Design a product that allows users to find gas at the best price",
+        "config": { "color": "dark-gray" }
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Q&A",
+  "order": 13,
+  "type": "half",
+  "link": true,
+  "content": {
+    "first_column": [
+      {
+        "type": "subtitle",
+        "subtitle": "Q&A",
+        "config": { "color": "black" }
+      }
+    ],
+    "second_column": []
+  }
+}

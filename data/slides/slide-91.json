@@ -1,0 +1,16 @@
+{
+  "title": "Fuel Price App",
+  "order": 10,
+  "type": "half",
+  "link": true,
+  "content": {
+    "first_column": [
+      {
+        "type": "subtitle",
+        "subtitle": "Fuel Price App",
+        "config": { "color": "black" }
+      }
+    ],
+    "second_column": []
+  }
+}
