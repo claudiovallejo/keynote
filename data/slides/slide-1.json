@@ -5,17 +5,16 @@
   "content": {
     "first_column": [
       {
+        "type": "paragraph",
+        "paragraph": "Managed by Q",
+        "config": { "color": "dark-gray" }
+      },
+      {
         "type": "subtitle",
         "subtitle": "Portfolio Presentation",
         "config": { "color": "black" }
       }
     ],
-    "second_column": [
-      {
-        "type": "paragraph",
-        "paragraph": "by Claudio Vallejo",
-        "config": { "color": "dark-gray" }
-      }
-    ]
+    "second_column": []
   }
 }

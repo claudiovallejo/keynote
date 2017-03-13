@@ -13,7 +13,12 @@
     "second_column": [
       {
         "type": "list",
-        "list": ["1 — Tym Forest Website", "2 — Fuel Price App Exercise", "3 — Q&A"],
+        "list": ["<span class=\"dark-gray\">1</span><span class=\"white\"> — </span>Tym Forest Website", "<span class=\"dark-gray\">2</span><span class=\"white\"> — </span>Fuel Price App"],
+        "config": { "color": "black" }
+      },
+      {
+        "type": "list",
+        "list": ["<span class=\"dark-gray\">*</span><span class=\"white\"> — </span>Qs are welcome anytime"],
         "config": { "color": "dark-gray" }
       }
     ]

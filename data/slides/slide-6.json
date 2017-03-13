@@ -1,5 +1,5 @@
 {
-  "title": "Tym Forest: Website Demos",
+  "title": "Tym Forest: Site Structure",
   "order": 6,
   "type": "half",
   "link": true,
@@ -7,15 +7,30 @@
     "first_column": [
       {
         "type": "subtitle",
-        "subtitle": "Website Demos",
+        "subtitle": "Site Structure",
         "config": { "color": "black" }
+      },
+      {
+        "type": "paragraph",
+        "paragraph": "4 main sections",
+        "config": { "color": "dark-gray" }
+      },
+      {
+        "type": "paragraph",
+        "paragraph": "2 dynamic sections",
+        "config": { "color": "dark-gray" }
       }
     ],
     "second_column": [
       {
         "type": "list",
-        "list": ["Product Detail", "Store Detail"],
-        "config": { "color": "dark-gray" }
+        "list": ["<span class=\"blue\">1</span><span class=\"white\"> — </span>Home", "<span class=\"blue\">2</span><span class=\"white\"> — </span>Products", "<span class=\"blue\">3</span><span class=\"white\"> — </span>Services", "<span class=\"blue\">4</span><span class=\"white\"> — </span>Stores"],
+        "config": { "color": "black" }
+      },
+      {
+        "type": "list",
+        "list": ["<span class=\"orange\">5</span><span class=\"white\"> — </span>Products on Sale", "<span class=\"orange\">6</span><span class=\"white\"> — </span>Careers"],
+        "config": { "color": "black" }
       }
     ]
   }

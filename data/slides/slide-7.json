@@ -1,21 +1,22 @@
 {
-  "title": "Tym Forest: Manageable Website",
+  "title": "Tym Forest: Website Demos",
   "order": 7,
   "type": "half",
   "link": true,
   "content": {
     "first_column": [
       {
-        "type": "paragraph",
-        "paragraph": "Goal 2",
-        "config": { "color": "dark-gray" }
-      },
-      {
         "type": "subtitle",
-        "subtitle": "Manageable Website",
+        "subtitle": "Website Demos",
         "config": { "color": "black" }
       }
     ],
-    "second_column": []
+    "second_column": [
+      {
+        "type": "list",
+        "list": ["<span class=\"dark-gray\">1 —</span> Product Detail", "<span class=\"dark-gray\">2 —</span> Store Detail"],
+        "config": { "color": "black" }
+      }
+    ]
   }
 }

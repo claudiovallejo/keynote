@@ -14,7 +14,7 @@
     "second_column": [
       {
         "type": "list",
-        "list": ["Focus on the Problem", "Value of System Design", "Budget for Errors"],
+        "list": ["System Design", "Teamwork", "Value Solutions"],
         "config": { "color": "dark-gray" }
       }
     ]

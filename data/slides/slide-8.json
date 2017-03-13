@@ -14,7 +14,7 @@
     "second_column": [
       {
         "type": "list",
-        "list": ["Clear Expectations", "Defined Process", "Integration Bugs"],
+        "list": ["Undefined Process", "No Prior Experience", "Valuing Visuals"],
         "config": { "color": "dark-gray" }
       }
     ]

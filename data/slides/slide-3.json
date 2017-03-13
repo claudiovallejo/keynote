@@ -6,20 +6,15 @@
     "first_column": [
       {
         "type": "subtitle",
-        "subtitle": "Tym Forest Website",
+        "subtitle": "Website Goals",
         "config": { "color": "black" }
-      },
-      {
-        "type": "paragraph",
-        "paragraph": "Main Project Goals",
-        "config": { "color": "dark-gray" }
       }
     ],
     "second_column": [
       {
         "type": "list",
-        "list": ["1 — Informative", "2 — Manageable"],
-        "config": { "color": "dark-gray" }
+        "list": ["<span class=\"dark-gray\">1</span><span class=\"white\"> — </span>Informative", "<span class=\"dark-gray\">2</span><span class=\"white\"> — </span>Manageable"],
+        "config": { "color": "black" }
       }
     ]
   }
