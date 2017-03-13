@@ -14,7 +14,7 @@
     "second_column": [
       {
         "type": "list",
-        "list": ["Undefined Process", "No Prior Experience", "Valuing Visuals"],
+        "list": ["Undefined Process", "Techincal Inexperience", "Emphasizing Visuals"],
         "config": { "color": "dark-gray" }
       }
     ]

@@ -14,7 +14,7 @@
     "second_column": [
       {
         "type": "list",
-        "list": ["System Design", "Teamwork", "Value Solutions"],
+        "list": ["Value of System Design", "Value of Teamwork", "Value of User Testing"],
         "config": { "color": "dark-gray" }
       }
     ]
