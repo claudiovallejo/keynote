@@ -7,24 +7,14 @@
   </div>
 </nav>
 <div data-header="menu" class="function-cb duration0_25 property-all o0 transform-tX4 fixed top-0" style="right: 1rem; top: 4rem;">
-  <%# Config %>
-  <% counter = 0 %>
-  <% sl = data.slides.length - 1 %>
-  <%# End %>
   <% data.slides.each do |id, slide| %>
     <%# Config %>
-    <% if counter != sl %>
-      <% margin_bottom = "mb0_5" %>
-    <% else %>
-      <% margin_bottom = "" %>
-    <% end %>
     <% if slide.order === order %>
-      <% color = "black" %>
+      <% color = "blue" %>
     <% else %>
       <% color = "dark-gray" %>
     <% end %>
     <%# End %>
-    <a data-header="link" class="function-cb duration0_25 property-all db tr ma0 <%= margin_bottom %> roboto f0_75 fw4 <%= color %> td-none" href="/slide-<%= slide.order %>"><%= slide.title %> — <%= slide.order %></a>
-    <% counter = counter + 1 %>
+    <a data-header="link" class="function-cb duration0_25 property-all db tr ma0 mb0_5 roboto f0_75 fw4 <%= color %> td-none" href="/slide-<%= slide.order %>"><%= slide.title %> — <%= slide.order %></a>
   <% end %>
 </div>
