@@ -1,0 +1,16 @@
+{
+  "title": "Thank you",
+  "order": 14,
+  "type": "half",
+  "link": true,
+  "content": {
+    "first_column": [
+      {
+        "type": "subtitle",
+        "subtitle": "Thank you",
+        "config": { "color": "black" }
+      }
+    ],
+    "second_column": []
+  }
+}
